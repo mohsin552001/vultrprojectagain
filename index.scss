@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+
+.Container {
+    background: #142149;
+    height: 990px;
+    width: 100%;
+
+    .topheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+
+        background: #dfe3ed;
+
+
+
+        .News {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-left: 400px;
+            padding-right: 200px;
+
+            .news {
+                outline: none;
+                border: 0px solid;
+                color: #fff;
+                background: #007bfc;
+                border-radius: 3px;
+                font-size: 11px;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            p {
+                display: block;
+                color: #142149;
+                padding-left: 16px;
+                font-size: 14px;
+                font-weight: 600;
+                transition: color .3s;
+                line-height: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #007bfc;
+                }
+            }
+        }
+
+        .documents {
+
+
+            button {
+                background: none;
+                border: 0px solid;
+                color: #4e5259;
+                cursor: pointer;
+
+                &:hover {
+                    color: #007bfc;
+                }
+
+                i {
+                    padding-left: 10px;
+                }
+            }
+
+
+
+
+        }
+
+        .documents:hover+.Englishhover {
+            display: block;
+            transition-delay: 3s;
+        }
+
+
+
+        .Englishhover {
+            position: absolute;
+            top: 45px;
+            right: 250px;
+            height: 210px;
+            width: 130px;
+            background-color: white;
+
+            border-radius: 5px;
+            display: none;
+            transition: 0s;
+            box-shadow: 0px 0dpx 5px gainsboro;
+
+            ul {
+
+
+                li {
+                    list-style: none;
+                    padding-bottom: 20px;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: #007bfc;
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .Container {
+        .topheader {
+            height: 60px;
+
+            .News {
+                padding-left: 30px;
+                width: 100%;
+                padding-right: 0px;
+
+
+
+                p {
+                    width: 100%;
+                    display: flex;
+
+                }
+            }
+
+            .documents {
+                display: none;
+            }
+        }
+    }
+}
