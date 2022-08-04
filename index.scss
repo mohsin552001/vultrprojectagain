@@ -284,9 +284,14 @@ body {
                 gap: 10px;
                 margin-top: 30px;
 
+                h3 {
+                    display: none;
+                }
+
                 .input {
                     width: 100%;
                     height: 60px;
+
 
                     input {
                         padding: 0 24px;
@@ -295,6 +300,7 @@ body {
                         font-size: 19px;
                         outline: none;
                         border: 0px solid;
+                        color: #dfe3ed;
                     }
                 }
 
@@ -368,7 +374,7 @@ body {
                 transition-property: box-shadow, transform;
                 transition-duration: 350ms;
                 transition-timing-function: ease;
-                box-shadow: 0px 0px 10px gainsboro; // box-shadow: 5px 15px 15px #e9e9e9;
+                box-shadow: 0px 0px 5px gainsboro; // box-shadow: 5px 15px 15px #e9e9e9;
                 border-radius: 5px;
 
                 // rgb(103, 109, 143);
@@ -388,6 +394,7 @@ body {
                     padding-right: 20px;
                     line-height: 28px;
                     text-align: center;
+                    color: #7b7b7b;
                 }
 
                 span {
@@ -397,18 +404,7 @@ body {
                 }
             }
 
-            // .randomthings:hover {
 
-
-            //     -webkit-transform: scale(1.5);
-            //     //  /* Safari 3-8 */
-
-            // }
-
-            // .randomthings:hover {
-            //     transform: translateX(0px) translateY(-175px);
-            //     transform: scaley(1.2);
-            // }
             .randomthings:is(:hover, :focus) {
 
                 transform: translateY(-18px);
@@ -434,6 +430,7 @@ body {
                 font-size: 27px;
                 line-height: 40px;
                 font-weight: 300;
+                color: #7b7b7b;
             }
         }
 
@@ -453,6 +450,7 @@ body {
 @media only screen and (max-width: 1200px) {
     .Container {
         position: relative;
+        height: 500px;
 
         .topheader {
             height: 60px;
@@ -676,7 +674,7 @@ body {
                     line-height: 28px;
                     color: rgba(229, 235, 255, .8);
                     text-align: center;
-                    text-align: center;
+
                 }
 
                 .inputsection {
@@ -691,6 +689,16 @@ body {
                     justify-content: center;
                     align-items: center;
                     background-color: #fff;
+                    position: absolute;
+                    top: 300px;
+
+                    h3 {
+                        font-size: 21px;
+                        text-align: center;
+                        color: #142149;
+                        margin-bottom: 0px;
+                        display: block;
+                    }
 
                     .input {
                         width: 90%;
@@ -733,11 +741,154 @@ body {
         }
 
         .waveimg {
-            position: absolute;
-            top: 520px;
+            margin-top: 110px;
 
         }
 
+        .kindsSection {
+            position: absolute;
+            width: 100%;
+            height: 500px;
 
+            top: 300px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 500px;
+
+            .kinds {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+                gap: 20px;
+                top: 380px !important;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    display: block;
+                    margin-top: 0px;
+                }
+
+
+
+                .randomthings {
+
+                    display: none;
+
+                    // rgb(103, 109, 143);
+                    img {
+                        width: 250px;
+                        height: 244px;
+
+                    }
+
+
+
+
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #7b7b7b;
+                    }
+
+                    span {
+
+                        color: #007bfc;
+                        font-weight: bold;
+                    }
+                }
+
+                .randomresponsive {
+                    display: block;
+                    width: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .randomthings:is(:hover, :focus) {
+
+                    transform: translateY(-18px);
+                }
+            }
+
+            .globally {
+                margin-top: 1550px;
+                text-align: center;
+
+                h1 {
+                    font-size: 27px;
+
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+
+            p {
+                font-size: 21px;
+                line-height: 40px;
+                font-weight: 300;
+            }
+        }
+
+
+        .mapcitiesinresponsive {
+
+            display: flex !important;
+            flex-direction: row !important;
+            position: absolute;
+            top: 1100px;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+
+            display: block;
+
+
+            ul li::before {
+                content: "\2022";
+                color: #007bfc;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+            ul {
+                display: block;
+
+
+            }
+
+            .unorderedlist {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: row;
+
+                list-style: none;
+                padding-left: 15%;
+                display: block !important;
+
+
+                li {
+                    color: #142149;
+                    padding: 7px;
+                    font-size: 17px;
+                    font-weight: bold;
+
+
+                }
+            }
+        }
     }
+
 }
