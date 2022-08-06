@@ -1433,7 +1433,7 @@ body {
 @media only screen and (max-width: 1200px) {
     .Container {
         position: relative;
-        height: 500px;
+        height: 600px;
 
         .topheader {
             height: 60px;
@@ -1521,22 +1521,23 @@ body {
                 .productfeatures {
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
+                    align-items: center;
+                    width: 95%;
                     justify-content: space-between !important;
                     position: absolute;
                     top: 100px;
                     left: 0px;
-                    width: 90%;
-                    height: 400px;
-                    border: 1px solid;
+
+                    height: 290px;
+
                     border-radius: 10px;
-                    margin-left: 15px;
-                    padding-left: 20px;
+                    margin-left: 10px;
+
                     background-color: #fff;
                     display: none;
 
                     span {
-                        width: 100%;
+                        width: 90%;
                         display: flex;
                         justify-content: space-between;
                         color: #142149;
@@ -1547,10 +1548,22 @@ body {
 
                         &:hover {
                             color: #007bfc;
+
+                            .visibleproducts {
+                                display: none;
+
+                                .groups {
+                                    display: none;
+
+                                    .types {
+                                        display: none;
+                                    }
+                                }
+                            }
                         }
 
                         i {
-                            padding-right: 20px;
+                            padding-right: 10px;
                         }
 
                         .visibleproducts {
@@ -1587,65 +1600,32 @@ body {
                     background-color: #fff;
                     display: none;
 
+
                     .empty {
                         display: none;
                     }
 
                     .btn1 {
                         width: 90%;
-                        height: 50px;
-                        font-size: 17px;
-                        background: none;
-                        outline: none;
-                        border: 1px solid;
-                        border-color: rgb(119, 119, 224);
-                        border-radius: 2px;
-                        color: #fff;
-                        cursor: pointer;
-                        color: #007bfc;
-                        border-radius: 5px;
 
+                        color: #0000cc;
 
-
-                        .btn2 {
-
-                            height: 50px;
-                            font-size: 17px;
-                            border-radius: 2px;
-                            border: 0px solid;
-                            background: #007bfc;
-                            color: #fff;
-                            cursor: pointer;
-                            border-radius: 5px;
-
-                            button {
-                                width: 90%;
-                            }
-
-                            &:hover {
-                                background: radial-gradient(circle closest-side, #51b9ff, transparent);
-                                background-color: rgb(0, 145, 249);
-                            }
+                        &:hover {
+                            background-color: #fff;
+                            color: #51b9ff;
+                            border-color: #51b9ff;
                         }
+                    }
 
-                        .btn3 {
-                            max-width: 200px !important;
+                    .btn2 {
 
-                            height: 80px;
-                            font-size: 17px;
-                            border: 0px solid;
-                            border-radius: 2px;
-                            background: #007bfc;
-                            color: #fff;
-                            cursor: pointer;
-                            border-radius: 5px;
+                        width: 90%;
+                    }
 
-                            &:hover {
-                                background: radial-gradient(circle closest-side, #51b9ff, transparent);
-                                background-color: rgb(0, 145, 249);
-                            }
+                    .btn3 {
+                        width: 90%;
 
-                        }
+
                     }
 
                 }
@@ -1670,7 +1650,10 @@ body {
 
                 span {
 
-                    font-size: 35px;
+                    // font-size: 35px;
+                    // font-weight: 700;
+                    // line-height: 48px;
+                    font-size: 40px;
                     font-weight: 700;
                     line-height: 48px;
                     color: #fff;
@@ -1680,11 +1663,14 @@ body {
                 }
 
                 p {
-                    margin-bottom: 0;
+                    // margin-bottom: 0;
+                    // font-size: 17px;
+                    // line-height: 28px;
+                    // color: rgba(229, 235, 255, .8);
                     font-size: 17px;
                     line-height: 28px;
-                    color: rgba(229, 235, 255, .8);
                     text-align: center;
+                    width: 90%;
 
                 }
 
@@ -1695,20 +1681,23 @@ body {
                     margin-top: 110px;
                     flex-direction: column;
                     width: 90%;
-                    height: 400px;
-                    display: flex;
+                    height: 350px;
+                    display: flex !important;
                     justify-content: center;
                     align-items: center;
                     background-color: #fff;
                     position: absolute;
-                    top: 300px;
+                    top: 350px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 5px rgb(207, 207, 207);
 
                     h3 {
                         font-size: 21px;
                         text-align: center;
                         color: #142149;
                         margin-bottom: 0px;
-                        display: block;
+                        margin-top: 0px;
+                        display: flex;
                     }
 
                     .input {
@@ -1775,7 +1764,7 @@ body {
 
                 width: 100%;
                 gap: 20px;
-                top: 380px !important;
+                top: 400px !important;
                 justify-content: center;
                 align-items: center;
 
@@ -1931,7 +1920,7 @@ body {
         }
 
         .powerfulApi {
-            // .Additionalfeatures {}
+
 
             .bluebox {
                 display: none;

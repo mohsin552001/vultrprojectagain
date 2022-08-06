@@ -14,7 +14,7 @@ function showsignupbtns() {
 
     var x = document.querySelector(".companyproducts .signinupbtns");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
 
     } else {
         x.style.display = "none";
