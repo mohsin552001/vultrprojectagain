@@ -2448,8 +2448,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     line-height: 28px;
-    background: -webkit-gradient(linear, left top, right top, from(#081e75));
-    background: linear-gradient(90deg, #081e75);
+    background-color: transparent;
   }
   .Container .resources .text {
     display: -webkit-box;
