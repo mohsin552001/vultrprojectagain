@@ -151,6 +151,7 @@ body {
 
 .Container .bottomheader .bar {
   display: none;
+  cursor: pointer;
 }
 
 .Container .bottomheader .companyproducts {
@@ -283,6 +284,8 @@ body {
 
 .Container .bottomheader .companyproducts .productfeatures span:hover .visibleproducts {
   display: block;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
 }
 
 .Container .bottomheader .companyproducts .signinupbtns {
@@ -458,9 +461,7 @@ body {
 }
 
 .Container .waveimg svg {
-  height: 100%;
   overflow: hidden;
-  width: 100%;
 }
 
 .Container .kindsSection {
@@ -1436,13 +1437,21 @@ body {
 }
 
 .Container .resources .introducing .mysqlimgsvg .text {
-  width: 526px;
+  width: 100%;
   padding: 35px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Container .resources .introducing .mysqlimgsvg .text h3 {
   color: #142149;
-  padding-left: 22px;
   margin-top: 0px;
 }
 
@@ -1450,7 +1459,6 @@ body {
   font-size: 15px;
   font-weight: 300;
   line-height: 24px;
-  padding-left: 22px;
 }
 
 .Container .resources .introducing .mysqlimgsvg .text p span {
@@ -1667,6 +1675,7 @@ body {
   }
   .Container .bottomheader .user {
     width: 10%;
+    cursor: pointer;
     height: 80px;
     padding-left: 30px;
     padding-top: 30px;
@@ -2508,8 +2517,8 @@ body {
             align-items: center;
     background-color: #fff;
     width: 90% !important;
-    margin-left: 0%;
-    padding-left: 0%;
+    margin-left: none;
+    padding-left: none;
   }
   .Container .resources .introducing .mysqlimgsvg img {
     width: 100%;
@@ -2533,6 +2542,8 @@ body {
             justify-content: flex-start;
     text-align: start;
     width: 100% !important;
+    margin: none;
+    padding: none;
   }
   .Container .resources .introducing .mysqlimgsvg .text p {
     font-size: 12px;

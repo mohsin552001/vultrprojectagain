@@ -824,7 +824,31 @@
 
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script>
+        function myFunction() {
+
+            var showproducts = document.querySelector(".companyproducts .productfeatures");
+            if (showproducts.style.display === "none") {
+                showproducts.style.display = "block";
+
+            } else {
+                showproducts.style.display = "none";
+
+            }
+        }
+
+        function showsignupbtns() {
+
+            var visiblebtns = document.querySelector(".companyproducts .signinupbtns");
+            if (visiblebtns.style.display === "none") {
+                visiblebtns.style.display = "flex";
+
+            } else {
+                visiblebtns.style.display = "none";
+
+            }
+        }
+    </script>
 </body>
 
 </html>
