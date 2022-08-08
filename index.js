@@ -6,7 +6,7 @@ function myFunction() {
         y.style.display = "none"
     } else {
         x.style.display = "none";
-        y.style.display = "block"
+        y.style.display = "flex"
     }
 }
 

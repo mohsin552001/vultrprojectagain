@@ -457,6 +457,12 @@ body {
   margin-top: 50px;
 }
 
+.Container .waveimg svg {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
 .Container .kindsSection {
   position: absolute;
   width: 100%;
@@ -680,7 +686,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  left: 550px;
+  left: 20%;
+  right: 20%;
 }
 
 .Container .powerfulApi .controlpanal span {
@@ -715,7 +722,7 @@ body {
   width: 50%;
   position: absolute;
   top: 300px;
-  left: 200px;
+  left: 10%;
 }
 
 .Container .powerfulApi .Additionalfeatures .clicksection .content {
@@ -832,7 +839,7 @@ body {
           box-shadow: 0 0px 3px gainsboro;
   position: absolute;
   background-color: white;
-  right: 250px;
+  right: 10%;
   position: absolute;
   top: 2470px;
 }
@@ -1094,7 +1101,7 @@ body {
   position: relative;
 }
 
-.Container .resources .application {
+.Container .resources .wireimg .application {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,18 +1116,18 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 0px;
-  left: 550px;
+  left: 20%;
+  right: 20%;
 }
 
-.Container .resources .application h2 {
+.Container .resources .wireimg .application h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   color: #142149;
 }
 
-.Container .resources .application p {
+.Container .resources .wireimg .application p {
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -1129,7 +1136,7 @@ body {
   color: #525666;
 }
 
-.Container .resources .application button {
+.Container .resources .wireimg .application button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1154,11 +1161,15 @@ body {
   border-color: #007bfc;
 }
 
-.Container .resources .application button:hover {
+.Container .resources .wireimg .application button:hover {
   color: #60adff;
   border-color: #60adff;
   font-size: bold;
   cursor: pointer;
+}
+
+.Container .resources .wireimg img {
+  width: 100%;
 }
 
 .Container .resources .text {
@@ -1628,7 +1639,7 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1423px) {
   .Container {
     position: relative;
     height: 600px;
@@ -1868,7 +1879,7 @@ body {
     margin-top: 110px;
     -ms-flex-direction: column;
         flex-direction: column;
-    width: 90%;
+    width: 80%;
     height: 350px;
     display: flex !important;
     -webkit-box-pack: center;
@@ -1880,6 +1891,8 @@ body {
     background-color: #fff;
     position: absolute;
     top: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 5px #cfcfcf;
             box-shadow: 0px 0px 5px #cfcfcf;
@@ -1897,10 +1910,18 @@ body {
   .Container .cloud .infrastructure .inputsection .input {
     width: 90%;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .Container .cloud .infrastructure .inputsection .input input {
-    width: 90%;
-    padding: 0 24px;
+    width: 100%;
     height: 60px;
     border-radius: 3px;
     font-size: 19px;
@@ -1910,16 +1931,16 @@ body {
     color: #cbcaca;
   }
   .Container .cloud .infrastructure .inputsection .btn {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 90%;
   }
   .Container .cloud .infrastructure .inputsection .btn button {
-    width: 93%;
+    width: 100%;
     height: 60px;
     border: 0px solid;
     outline: none;
@@ -1928,7 +1949,6 @@ body {
     background: #007bfc;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 1%;
   }
   .Container .waveimg {
     margin-top: 180px;
